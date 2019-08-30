@@ -1,2 +1,6 @@
 __pycache__
 training_model/__pycache__
+training_model/_graph_v3.pb
+training_model/_graphv2.pb
+training_model/_labels_v3.txt
+training_model/_labelsv2.txt
