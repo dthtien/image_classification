@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: lightseagreen;
+    }
+    p {
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    form * {
+      font-size: 18px;
+    }
+
+    button {
+      background-color: lightskyblue;
+      border-radius: 5px;
+    }
+
+    input {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+    }
+
+    span {
+      font-weight: 600;
+    }
+
+    .container {
+      text-align: center;
+      margin: auto;
+      width: 50%;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 10px;
+      padding-bottom: 30px;
+      margin-top: 20%;
+    }
+    .infromation{
+      text-align: center
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    {% if detected_name %}
+      <div class="infromation">
+        <p>
+          Object:
+          <span>{{ detected_name }}</span>
+        </p>
+        <p>
+          Probability:
+          <span>{{ probability }}</span>
+        </p>
+      </div>
+    {% endif %}
+    <form action="http://localhost:5000/" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept="image/x-png,image/gif,image/jpeg" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
