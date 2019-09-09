@@ -4,3 +4,13 @@ training_model/_graph_v3.pb
 training_model/_graphv2.pb
 training_model/_labels_v3.txt
 training_model/_labelsv2.txt
+training_model/*.h5
+objects_*
+output/
+*.h5
+model_data/*.h5
+pretrain.weights
+training_set
+c1*
+_yolo3/
+predicter.py

@@ -68,7 +68,10 @@ class Labeler(object):
     return label
 
   def execute(self):
+    # load model
     graph = self.load_graph()
+    # Load image as tensor
+
     t = self.read_tensor_from_image_file()
 
     input_name = "import/" + self.input_layer
