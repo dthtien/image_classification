@@ -1,5 +1,5 @@
 # Image Processing
-
+- [Knowledge](https://paper.dropbox.com/doc/Image-classification-and-Object-detection--AkcEjwoOZPs8f3hYrZepKDRJAQ-RXYHSy4sAsAFb2o4CZo0k)
 - Installation:
 ```sh
 git clone git@github.com:dthtien/image_classification.git
@@ -19,11 +19,16 @@ pip install keras
   ```
 
 - Object detection
+  Download [model](https://drive.google.com/file/d/1S92D3y4dfeS_FmpSqPtK-Qn6OvnkPcNz/view?usp=sharing) here and remember change `weight_path` and `image_path` at `detector.py`
 
   ```
-  python3 predicter.py
+  python3 detector.py
   ```
-
+- Training
+  Dowload [training set](https://drive.google.com/drive/folders/1r4dteg8-VV93s2vHC7hPZga-bT7E2wsZ?usp=sharing) and modify `training.py` with downloaded data, modify `train.txt`
+  ```
+  python3 training.py
+  ```
 - Current objects
 ```
 Daisy
